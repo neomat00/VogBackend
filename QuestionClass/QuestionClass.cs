@@ -15,7 +15,7 @@ namespace QuestionClass
         };
     }
 
-    public static void TestQuestion()
+    public static void QuestionA()
     {
         object NamesList = null;
         using (var Names = NamesList.GetEnumerator())
