@@ -28,9 +28,9 @@ namespace VogCodeChallenge.API.Controllers
 
         // GET: api/Employees/{Id}
         [HttpGet("api/employees/department/{departmentId}")]
-        public IActionResult GetForFilter(string departmentId)
+        public IActionResult GetForFilter(int departmentId)
         {
-            return Ok(_employeeService.ListAll().Where(ee => ee.Department.Address == departmentId));
+            return Ok(_employeeService.ListAll().Where(ee => ee.Department.Id == departmentId));
         }
     }
 }

@@ -17,9 +17,9 @@ namespace VogCodeChallenge.API.Services
         {
             _departments = new List<Department>
             {
-                new Department { Name = "Hr", Address = "TEST1"},
-                new Department { Name = "Dev", Address = "TEST2"},
-                new Department { Name = "Pr", Address = "TEST3"}
+                new Department { Name = "Hr", Address = "TEST1", Id = 1},
+                new Department { Name = "Dev", Address = "TEST2", Id = 2},
+                new Department { Name = "Pr", Address = "TEST3", Id = 3}
             };
             _employees = new List<Employee>
             {
