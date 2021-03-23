@@ -6,7 +6,7 @@ namespace QuestionClass
     {
         static void Main(string[] args)
         {
-            QuestionClass.QuestionA;
+            QuestionClass.QuestionA();
         }
     }
 }

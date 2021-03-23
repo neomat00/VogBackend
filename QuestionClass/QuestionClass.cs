@@ -13,19 +13,20 @@ namespace QuestionClass
             "Jeffrey",
             "John",
         };
-    }
 
-    public static void QuestionA()
-    {
-        object NamesList = null;
-        using (var Names = NamesList.GetEnumerator())
+        public static void QuestionA()
         {
-            while (Names.MoveNext())
+            using (var Names = NamesList.GetEnumerator())
             {
-                Console.WriteLine(Names.Current);
+                while (Names.MoveNext())
+                {
+                    Console.WriteLine(Names.Current);
+                }
             }
         }
     }
+
+    
 
 
 }
