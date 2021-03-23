@@ -7,7 +7,7 @@ using VogCodeChallenge.API.Services;
 
 namespace VogCodeChallenge.API.Services
 {
-    public class SampleEmployment 
+    public class SampleEmployment : IEmployeeService
     {
         private IList<Employee> _employees;
 
@@ -28,6 +28,16 @@ namespace VogCodeChallenge.API.Services
                 new Employee { FirstName = "Test3FN", LastName = "Test3LN", Address = "Test3A", Department = _departments[2]},
             };
 
+        }
+
+        public IEnumerable<Employee> GetAll()
+        {
+            return _employees;
+        }
+
+        public IList<Employee> ListAll()
+        {
+            return _employees;
         }
     }
 }
