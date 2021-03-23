@@ -1,0 +1,19 @@
+//I Was unable to start a lambda project on my computer even after trying to install Lambda tools through CLI, GUI and restarting VS.  
+
+//Recieve and process DynamoDb events
+public class Handler implements RequestHandler<DynamodbEvent, Void> {
+
+    @Override
+    public Void handleRequest(DynamodbEvent dynamodbEvent, Context context) {
+
+        for (DynamodbStreamRecord record : dynamodbEvent.getRecords()) {
+
+            if (record == null) {
+                continue;
+            }
+
+        }
+
+        return null;
+    }
+}
